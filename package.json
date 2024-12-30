@@ -8,19 +8,28 @@
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.122",
-    "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
+    "ajv": "^6.12.6",
+    "ajv-keywords": "^3.5.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-native": "^0.72.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
+    "styled-components": "^6.1.13",
     "web-vitals": "^2.1.4"
+  },
+  "resolutions": {
+    "ajv": "^6.12.6",
+    "react-native": "^0.72.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint \"**/*.{ts,tsx}\"",
+    "lint:fix": "eslint \"**/*.{ts,tsx}\" --fix",
+    "format": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +48,24 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.18.6",
+    "@types/react": "^19.0.2",
+    "@types/react-native": "^0.72.8",
+    "@types/styled-components": "^5.1.34",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.3",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-native": "^4.1.0",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  },
+  "prettier": {
+    "editorconfig": true
   }
 }
