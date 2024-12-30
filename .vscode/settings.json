@@ -15,5 +15,7 @@
   "javascript.suggest.autoImports": true,
   "typescript.preferences.importModuleSpecifier": "relative",
   "javascript.preferences.importModuleSpecifier": "relative",
-  "javascript.updateImportsOnFileMove.enabled": "always"
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.autoImportSuggestions.enabled": true,
+  "javascript.autoImportSuggestions.enabled": true
 }
