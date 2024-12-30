@@ -1,12 +1,20 @@
 import React from "react";
-import Teste from "./teste";
-import EstilosGlobais from "./styles";
+import Projetos from "./containers/Projetos";
+import Sidebar from "./containers/Sidebar";
+import Sobre from "./containers/Sobre";
+import EstilosGlobais, { Container } from "./styles";
 
 function App() {
   return (
     <>
       <EstilosGlobais />
-      <Teste />
+      <Container>
+        <Sidebar />
+        <main>
+          <Sobre />
+          <Projetos />
+        </main>
+      </Container>
     </>
   );
 }
