@@ -1,13 +1,21 @@
 import React from "react";
+import Avatar from "../../components/Avatar";
+import Paragrafo from "../../components/Paragrafo";
 import Titulo from "../../components/Titulo";
+
+import { BotaoTema, Descricao, SidebarContainer } from "./styles";
 
 const Sidebar = () => (
   <aside>
-    <img
-      src="https://github.com/Caio-Cristian.png"
-      alt="Profile picture of Caio Cristian"
-    />
-    <Titulo fontSize={20}>Caio Cristian</Titulo>
+    <SidebarContainer>
+      <Avatar />
+      <Titulo fontSize={20}>Caio Cristian</Titulo>
+      <Paragrafo tipo="secundario" fontSize={16}>
+        Caio-Cristian
+      </Paragrafo>
+      <Descricao>Desenvolvedor Full-Stack</Descricao>
+      <BotaoTema>Trocar Tema</BotaoTema>
+    </SidebarContainer>
   </aside>
 );
 
